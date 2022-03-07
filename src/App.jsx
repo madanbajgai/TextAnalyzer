@@ -4,11 +4,15 @@ import { TextInput } from "./components/TextInput";
 import { useState } from "react";
 
 function App() {
-  const [darkmode, setdarkmode] = useState(true);
+  const [darkmode, setdarkmode] = useState(false);
+  function changeMode() {
+    setdarkmode(!darkmode);
+    darkmode ? (document.body.style.backgroundColor = "#212529") : (document.body.style.backgroundColor = "white");
+  }
   return (
     <div className="App">
-      <NavBar mode={darkmode} />
-      <TextInput title="Enter Your Text Here" />
+      <NavBar mode={darkmode} changemode={changeMode} />
+      <TextInput title="Enter Your Text Here" mode={darkmode} />
     </div>
   );
 }
