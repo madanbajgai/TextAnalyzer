@@ -2,7 +2,7 @@
   "name": "firstproject",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://madanbajgai.github.io/textanalyzer",
+  "homepage": "https://madanbajgai.github.io/textanalyzer/",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
