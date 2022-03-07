@@ -7,7 +7,7 @@ function App() {
   const [darkmode, setdarkmode] = useState(false);
   function changeMode() {
     setdarkmode(!darkmode);
-    darkmode ? (document.body.style.backgroundColor = "#212529") : (document.body.style.backgroundColor = "white");
+    darkmode ? (document.body.style.backgroundColor = "white") : (document.body.style.backgroundColor = "#212529");
   }
   return (
     <div className="App">

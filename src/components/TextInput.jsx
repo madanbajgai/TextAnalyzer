@@ -33,9 +33,9 @@ export const TextInput = ({ title, mode }) => {
   return (
     <>
       <div className="container">
-        <h1 className={`text-${mode ? "dark" : "light"} bg-${mode ? "light" : "dark"}`}>{title}</h1>
+        <h1 className={`text-${mode ? "light" : "dark"} bg-${mode ? "dark" : "light"}`}>{title}</h1>
         <div className="mb-3">
-          <textarea onChange={handleChange} className={`text-${mode ? "dark" : "light"} bg-${mode ? "light" : "dark"} form-control`} id="exampleFormControlTextarea1" value={text} rows="8"></textarea>
+          <textarea onChange={handleChange} className={`text-${mode ? "light" : "dark"} bg-${mode ? "dark" : "light"} form-control`} id="exampleFormControlTextarea1" value={text} rows="8"></textarea>
           <Button update={handleUpper} btntext="Uppercase" />
           <Button update={handleLower} btntext="Lowercase" />
           <Button update={handleClear} btntext="Clear Text" />
@@ -43,7 +43,7 @@ export const TextInput = ({ title, mode }) => {
           <Button update={handleRemove} btntext="Remove Extra Spaces" />
         </div>
       </div>
-      <div className={`container my-3 text-${mode ? "dark" : "light"} bg-${mode ? "light" : "dark"}`}>
+      <div className={`container my-3 text-${mode ? "light" : "dark"} bg-${mode ? "dark" : "light"}`}>
         <h2>Your text summary</h2>
         <p>
           {text.split(" ").length} words and {text.length} characters.
